@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Blogs_</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title"><img src="logo.png" /></h1>
+      <a href="index.html" id="blog" style="color: white; font-size:large; text-decoration:none; margin-left: 230px; padding: 7px 15px;
+      border: 2px solid rgb(157, 255, 173); border-radius: 5px;">Home</a>
+    </header>
+    <main>
+      <section id="articles" class="box-container">
+        <article>
+          <h2>1. Difference between local storage and session Storage</h2>
+          <p>
+            <b>Session Storage:</b> The sessionStorage object stores data only
+            for a session. It means that the data stored in the sessionStorage
+            will be deleted when the browser is closed.
+          </p>
+          <p>
+            <b>Local Storage:</b> Unlike sessionStorage localStorage continues
+            to store data after the browser is closed. It means that data stored
+            in localStorage does not expire.
+          </p>
+        </article>
+        <article>
+          <h2>2. Difference between global scope and block scope</h2>
+          <p><b>Scope:</b> Visibility or Accessibility of a variable.</p>
+          <p>
+            <b>Global Scope:</b> If a variable is declared outside all functions
+            or curly braces ({}), it is said to be defined in the global scope.
+            Once you’ve declared a global variable, you can use that variable
+            anywhere in your code, even in functions.
+          </p>
+          <p>
+            <b>Block Scope:</b> When you declare a variable with const or let
+            within a curly brace ({}), you can access this variable only within
+            that curly brace.
+          </p>
+        </article>
+        <article>
+          <h2>3. What is Event Loop?</h2>
+          <p>
+            <b>Event Loop:</b> It's a fundamental piece of the JavaScript engine
+            that always monitor call stack, task queue and microtask queue. If
+            the call stack is empty it puts callback function in call stact from
+            task queues.
+          </p>
+        </article>
+        <article>
+          <h2>4. When do we get <code>undefined</code> in JavaScript?</h2>
+          <p>
+            <b>1. When value is not defined</b> <br />
+            <b>2. When a function does not return anything it return
+              undefined.</b
+            >
+            <br />
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="history.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
